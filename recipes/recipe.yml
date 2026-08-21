@@ -3,7 +3,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: tj5-atomic
 # description will be included in the image's metadata
-description: This is my personal OS image based on Bazzite KDE NVIDIA OPEN - tailored for gaming, AI, ML etc
+description: This is my personal OS image based on Bazzite KDE NVIDIA OPEN - tailored for gaming, programming, AI/ML and 3D
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bazzite-nvidia-open

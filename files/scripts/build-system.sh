@@ -1,8 +1,7 @@
 #!/bin/bash 
 
 # exit if an error occurs
-set -e 
-
+set -oue pipefail
 # Define subroutines
 
 intro() {
@@ -70,7 +69,6 @@ cleanup() {
 # Execute the code
 echo "Setting up tj5-atomic...." 
 intro
-flatpak_cleanup
 update_sys
 terra_config
 update_sys
