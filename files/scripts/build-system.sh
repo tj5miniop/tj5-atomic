@@ -64,9 +64,7 @@ cleanup() {
 echo "Setting up tj5-atomic...." 
 intro
 update_sys
-terra_config
-update_sys
-terra_install
+app_install
 bazzite_removal
 bazzite_additions
 development
