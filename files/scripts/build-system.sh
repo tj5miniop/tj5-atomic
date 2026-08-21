@@ -14,6 +14,9 @@ terra_config() {
     # configure terra repositories and add github CLI
     echo "--- Configuring Teraa repositories ---" 
     dnf5 -y install gh terra-release-mesa terra-release-extras
+}
+
+terra_install () {
     dnf5 -y install winetricks vlc localsend-bin nvidia-patch heroic-games-launcher faugus-launcher protonplus gpu-screen-recorder gpu-screen-recorder-ui steamtinkerlaunch
 }
 
@@ -51,6 +54,8 @@ cleanup() {
 echo "Setting up tj5-atomic...." 
 update_sys
 terra_config
+update_sys
+terra_install
 bazzite_removal
 bazzite_additions
 development
