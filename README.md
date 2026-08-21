@@ -1,8 +1,6 @@
 # tj5-atomic &nbsp; [![bluebuild build badge](https://github.com/tj5miniop/tj5-atomic/actions/workflows/build.yml/badge.svg)](https://github.com/tj5miniop/tj5-atomic/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
+Tj5-atomic - my own custom image based on Bazzite for my personal needs - it aim's to create a "base" system which can be built upon while still delivering what you expect from Bazzite.
 
 ## Installation
 
