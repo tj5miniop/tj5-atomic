@@ -16,9 +16,6 @@ intro() {
 }
 
 update_sys() {
-    echo "enabling Terra Repositories" 
-    dnf5 -y config-manager enable terra*
-    echo "-- Updating the System...-- "
     # update system
     dnf5 -y update && dnf5 -y upgrade && dnf5 -y clean all
 }
@@ -28,14 +25,9 @@ flatpak_cleanup() {
     flatpak remove $(curl -L https://raw.githubusercontent.com/ublue-os/bazzite/18a220517154c36d0e0aea42ddc221b3760f55d6/installer/kde_flatpaks/flatpaks) -y
 }
 
-terra_config() {
-    # configure terra repositories and add github CLI
-    echo "--- Configuring Teraa repositories ---" 
-    dnf5 -y install gh terra-release-mesa terra-release-extras
-}
+app_install () {
+    dnf5 -y install gh vlc
 
-terra_install () {
-    dnf5 -y install winetricks vlc localsend-bin nvidia-patch heroic-games-launcher faugus-launcher protonplus gpu-screen-recorder gpu-screen-recorder-ui steamtinkerlaunch
 }
 
 bazzite_removal() {
@@ -65,8 +57,6 @@ cleanup() {
     dnf5 -y clean all
     rm -rf /tmp/*
     rm -rf /var/cache*
-    echo "disabling Terra Repositories" 
-    dnf5 -y config-manager disable terra*
 }
 
 
