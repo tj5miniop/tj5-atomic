@@ -23,10 +23,14 @@ modules:
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
+          - app.zen_browser.zen
           - com.github.tchx84.Flatseal
           - com.obsproject.Studio
           - io.github.rfrench3.scopebuddy-gui
+          - com.vscodium.codium
+          - org.desktop_plus.desktop-plus
+          - space.bigrat.mocktail
+          - com.usebottles.bottles
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: script
