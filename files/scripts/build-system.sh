@@ -16,6 +16,8 @@ intro() {
 }
 
 update_sys() {
+    echo "enabling Terra Repositories" 
+    dnf5 -y config-manager enable terra*
     echo "-- Updating the System...-- "
     # update system
     dnf5 -y update && dnf5 -y upgrade && dnf5 -y clean all
@@ -63,6 +65,8 @@ cleanup() {
     dnf5 -y clean all
     rm -rf /tmp/*
     rm -rf /var/cache*
+    echo "disabling Terra Repositories" 
+    dnf5 -y config-manager disable terra*
 }
 
 
