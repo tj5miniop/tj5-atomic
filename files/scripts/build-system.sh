@@ -10,6 +10,11 @@ update_sys() {
     dnf5 -y update && dnf5 -y upgrade && dnf5 -y clean all
 }
 
+flatpak_cleanup() {
+    # this removes ALL bazzite flatpaks - these will be replaced with alternatives
+    flatpak remove $(curl -L https://raw.githubusercontent.com/ublue-os/bazzite/18a220517154c36d0e0aea42ddc221b3760f55d6/installer/kde_flatpaks/flatpaks) -y
+}
+
 terra_config() {
     # configure terra repositories and add github CLI
     echo "--- Configuring Teraa repositories ---" 
@@ -52,6 +57,7 @@ cleanup() {
 
 # Execute the code
 echo "Setting up tj5-atomic...." 
+flatpak_cleanup
 update_sys
 terra_config
 update_sys
