@@ -55,8 +55,6 @@ development() {
 cleanup() { 
     echo "--- cleanup time! ---" 
     dnf5 -y clean all
-    rm -rf /tmp/*
-    rm -rf /var/cache*
 }
 
 
