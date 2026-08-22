@@ -49,7 +49,7 @@ decky() {
 development() {
     echo "--- installing Dev Tools ---"
     # this will be expanded in the near future 
-    dnf5 -y install codium 
+    dnf5 -y install uv nano  
 }
 
 cleanup() { 
