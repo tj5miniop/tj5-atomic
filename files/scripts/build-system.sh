@@ -59,13 +59,6 @@ cleanup() {
     rm -rf /var/cache*
 }
 
-more-removal () {}
-
-customization() {}
-
-proton() {}
-
-additions() {}
 
 
 # Execute the code
