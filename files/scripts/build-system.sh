@@ -38,7 +38,7 @@ bazzite_removal() {
 
 bazzite_additions() {
     echo "--- adding more features ---"
-    dnf5 -y install sunshine ds-inhibit ryzen-adj ghostty loupe
+    dnf5 -y install ds-inhibit ryzen-adj ghostty loupe
 }
 
 decky() {
@@ -58,6 +58,14 @@ cleanup() {
     rm -rf /tmp/*
     rm -rf /var/cache*
 }
+
+more-removal () {}
+
+customization() {}
+
+proton() {}
+
+additions() {}
 
 
 # Execute the code
