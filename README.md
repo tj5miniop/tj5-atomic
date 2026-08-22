@@ -1,7 +1,7 @@
 # tj5-atomic &nbsp; [![bluebuild build badge](https://github.com/tj5miniop/tj5-atomic/actions/workflows/build.yml/badge.svg)](https://github.com/tj5miniop/tj5-atomic/actions/workflows/build.yml)
 
 Tj5-atomic - my own custom image based on Bazzite for my personal needs - it aim's to create a "base" system which can be built upon while still delivering what you expect from Bazzite.
-
+# note this will be changing to an independent project once the core system is set up
 ## Installation
 
 > [!WARNING]  
