@@ -33,7 +33,7 @@ app_install () {
 bazzite_removal() {
     echo "--- removing certain Bazzite software ---"
     # this removes any software I may not use or could cause issues with this fork as it develops
-    dnf5 -y remove lutris kate gwenview haruna okular konsole bazzite-updater bazzite-portal waydroid waydroid-selinux --allowerasing
+    dnf5 -y remove lutris kate gwenview haruna okular konsole bazzite-updater bazzite-portal waydroid waydroid-selinux
 }
 
 bazzite_additions() {
