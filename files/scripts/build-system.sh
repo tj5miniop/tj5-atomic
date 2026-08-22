@@ -33,12 +33,12 @@ app_install () {
 bazzite_removal() {
     echo "--- removing certain Bazzite software ---"
     # this removes any software I may not use or could cause issues with this fork as it develops
-    dnf5 -y remove lutris kate gwenview haruna okular konsole bazzite-updater bazzite-portal waydroid waydroid-selinux
+    dnf5 -y remove lutris kate gwenview haruna okular bazzite-updater bazzite-portal waydroid waydroid-selinux
 }
 
 bazzite_additions() {
     echo "--- adding more features ---"
-    dnf5 -y install ds-inhibit ryzen-adj ghostty loupe
+    dnf5 -y install loupe virt-manager qemu edk2-ovmf libvirt
 }
 
 decky() {
