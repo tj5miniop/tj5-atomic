@@ -2,7 +2,7 @@
 
 Tj5-atomic - my own custom image based on Bazzite for my personal needs - it aim's to create a "base" system which can be built upon while still delivering what you expect from Bazzite.
 # note this will be changing to an independent project once the core system is set up
-## Installation
+## NOTICE - this image will soon be archived,a new system will be developed 
 
 > [!WARNING]  
 > [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
